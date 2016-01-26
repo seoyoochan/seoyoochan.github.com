@@ -1,0 +1,26 @@
+
+<header class="hero-image" style='background-image: url({{"/img/" | append: page.feature_image | prepend: ASSET_PATH }}.jpg);'>
+    <span class="menu-trigger animated fadeInDown">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </span>
+
+    {% include Writer/nav-no-js.html %}
+    {% include Writer/nav.html %}
+</header>
+
+<main class="container">
+    <div class="row">
+        <div class="col-xs-12 single-content">
+
+            <h1 class="text-center">{{ page.title }}</h1>
+
+            {{ content }}
+
+        </div><!-- main-content/col -->
+    </div> <!--/row -->
+
+</main> <!-- /container -->
+
+{% include Writer/footer-page.html %}

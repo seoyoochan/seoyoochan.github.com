@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+  {% include Writer/head.html %}
+
+  <body class="{% if page.bodyclass %}{{ page.bodyclass }}{% endif %}">
+
+    {{ content }}
+
+    <script src="{{ ASSET_PATH }}/js/vendor/modernizr.custom.32229-2.8-respondjs-1-4-2.js"></script>
+    <script src="{{ ASSET_PATH }}/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="{{ ASSET_PATH }}/js/vendor/jquery.jpanelmenu.min.js"></script>
+    <script src="{{ ASSET_PATH }}/js/vendor/viewportchecker.js"></script>
+    <script type="application/javascript" src="{{ ASSET_PATH }}/js/vendor/fastclick.min.js"></script>
+    {% if enable_retina %}
+    <script type="application/javascript" src="{{ ASSET_PATH }}/js/vendor/retina.min.js"></script>
+    {% endif %}
+    <script src="{{ ASSET_PATH }}/js/main.js"></script>
+  </body>
+
+</html>

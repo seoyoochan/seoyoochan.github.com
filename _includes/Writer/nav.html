@@ -1,0 +1,7 @@
+<div id="menu-target">
+    <ul>
+        {% for page in site.Writer.nav_list %}
+            <li><i class="fa {{ page[1][2] }}"></i><a href="{{ page[1][1] | prepend: BASE_PATH }}">{{ page[1][0] }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
