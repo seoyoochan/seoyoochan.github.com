@@ -2,12 +2,13 @@
 layout: page
 title: About
 permalink: /about/
-gradient: 2
 feature_image: feature-code
 ---
+
+{% include JB/setup %}
 <section id="about">
   <div class="md-line"></div>
-  <img src="https://photos-5.dropbox.com/t/2/AADEBTSF22h0-9VgtBN_N-a3dL7HZAmrJRrBSCGWw5l-8g/12/418039839/jpeg/32x32/1/_/1/2/profile.jpg/EJ-ag60DGNaIAyACKAI/fwOuiKe06hvkTmTwfMUIoCK88K3omHmyfQo0-eSfRWI?size=1024x768&size_mode=3" class="img-circle profile"/>
+  <img src="{{ ASSET_PATH }}/img/profile.jpg" class="img-circle profile"/>
   <p class="summary">
   I am Yoochan Seo, who are eager to do programming, playing soccer, learning new stuff!
   I often watching movies or drawing with my favorite Intuous Pro tablet.
